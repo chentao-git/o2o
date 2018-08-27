@@ -1,5 +1,6 @@
 package com.imooc.o2o.config.dao;
 
+import com.imooc.o2o.util.DESUtil;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,55 +24,30 @@ public class DataSourceConfiguration {
     /**
      * 生成与spring-dao-xml 对应的bean dataSource
      */
-@Bean(name = "dataSpurce")
-    public ComboPooledDataSource createDataSource(){
+    @Bean(name = "dataSource")
+    public ComboPooledDataSource createDataSource() throws PropertyVetoException {
         //生成dataSource实例
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         //跟配置文件一样设置以下信息
-    try {
         //驱动
         dataSource.setDriverClass(jdbcDriver);
         //url
         dataSource.setJdbcUrl(jdbcUrl);
         //用户
-        dataSource.setDataSourceName(jdbcUsername);
+        dataSource.setUser(DESUtil.getDecryptString(jdbcUsername));
         //密码
-        dataSource.setPassword(jdbcPassword);
-    } catch (PropertyVetoException e) {
-        e.printStackTrace();
-    }
-    return dataSource;
-}
-
-    public String getJdbcDriver() {
-        return jdbcDriver;
-    }
-
-    public void setJdbcDriver(String jdbcDriver) {
-        this.jdbcDriver = jdbcDriver;
-    }
-
-    public String getJdbcUrl() {
-        return jdbcUrl;
-    }
-
-    public void setJdbcUrl(String jdbcUrl) {
-        this.jdbcUrl = jdbcUrl;
-    }
-
-    public String getJdbcUsername() {
-        return jdbcUsername;
-    }
-
-    public void setJdbcUsername(String jdbcUsername) {
-        this.jdbcUsername = jdbcUsername;
-    }
-
-    public String getJdbcPassword() {
-        return jdbcPassword;
-    }
-
-    public void setJdbcPassword(String jdbcPassword) {
-        this.jdbcPassword = jdbcPassword;
+        dataSource.setPassword(DESUtil.getDecryptString(jdbcPassword));
+        // 配置c3p0连接池的私有属性
+        // 连接池最大线程数
+        dataSource.setMaxPoolSize(30);
+        // 连接池最小线程数
+        dataSource.setMinPoolSize(10);
+        // 关闭连接后不自动commit
+        dataSource.setAutoCommitOnClose(false);
+        // 连接超时时间
+        dataSource.setCheckoutTimeout(10000);
+        // 连接失败重试次数
+        dataSource.setAcquireRetryAttempts(2);
+        return dataSource;
     }
 }

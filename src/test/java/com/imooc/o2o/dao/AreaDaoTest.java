@@ -23,4 +23,5 @@ public class AreaDaoTest{
     List<Area> areaList = areaDao.queryArea();
     assertEquals(2, areaList.size());
   }
+
 }

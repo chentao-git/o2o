@@ -119,3 +119,9 @@
 2018-08-27 21:34:47.778 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on JHGHGBMQFLDSVHU with PID 5788 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
 2018-08-27 21:34:47.779 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
 2018-08-27 21:34:54.481 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Started AreaDaoTest in 7.342 seconds (JVM running for 8.851)
+2018-09-10 14:03:50.247 [main] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on admin-PC with PID 8532 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-10 14:03:50.251 [main] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-09-10 14:03:52.888 [main] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 2.957 seconds (JVM running for 5.647)
+2018-09-10 14:04:16.793 [main] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on admin-PC with PID 3884 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-10 14:04:16.798 [main] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-09-10 14:04:19.225 [main] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 3.308 seconds (JVM running for 4.75)

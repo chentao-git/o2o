@@ -158,3 +158,12 @@
 2018-09-12 17:18:35.521 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 8208 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
 2018-09-12 17:18:35.524 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
 2018-09-12 17:18:39.606 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Started AreaDaoTest in 4.409 seconds (JVM running for 7.261)
+2018-09-12 17:27:13.509 [main] INFO  com.imooc.o2o.dao.service.AreaServiceTest - Starting AreaServiceTest on admin-PC with PID 8652 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 17:27:13.512 [main] INFO  com.imooc.o2o.dao.service.AreaServiceTest - No active profile set, falling back to default profiles: default
+2018-09-12 17:27:16.867 [main] INFO  com.imooc.o2o.dao.service.AreaServiceTest - Started AreaServiceTest in 3.747 seconds (JVM running for 5.514)
+2018-09-12 17:28:00.894 [main] INFO  com.imooc.o2o.dao.service.AreaServiceTest - Starting AreaServiceTest on admin-PC with PID 10232 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 17:28:00.898 [main] INFO  com.imooc.o2o.dao.service.AreaServiceTest - No active profile set, falling back to default profiles: default
+2018-09-12 17:28:05.159 [main] INFO  com.imooc.o2o.dao.service.AreaServiceTest - Started AreaServiceTest in 4.887 seconds (JVM running for 6.841)
+2018-09-12 17:34:24.980 [main] INFO  com.imooc.o2o.dao.service.WechatAuthServiceTest - Starting WechatAuthServiceTest on admin-PC with PID 9728 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 17:34:24.983 [main] INFO  com.imooc.o2o.dao.service.WechatAuthServiceTest - No active profile set, falling back to default profiles: default
+2018-09-12 17:34:28.662 [main] INFO  com.imooc.o2o.dao.service.WechatAuthServiceTest - Started WechatAuthServiceTest in 4.005 seconds (JVM running for 6.294)

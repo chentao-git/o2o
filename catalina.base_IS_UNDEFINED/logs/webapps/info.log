@@ -167,3 +167,9 @@
 2018-09-12 17:34:24.980 [main] INFO  com.imooc.o2o.dao.service.WechatAuthServiceTest - Starting WechatAuthServiceTest on admin-PC with PID 9728 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
 2018-09-12 17:34:24.983 [main] INFO  com.imooc.o2o.dao.service.WechatAuthServiceTest - No active profile set, falling back to default profiles: default
 2018-09-12 17:34:28.662 [main] INFO  com.imooc.o2o.dao.service.WechatAuthServiceTest - Started WechatAuthServiceTest in 4.005 seconds (JVM running for 6.294)
+2018-09-12 18:32:21.783 [main] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on admin-PC with PID 8272 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 18:32:21.787 [main] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-09-12 18:32:24.268 [main] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 3.143 seconds (JVM running for 4.594)
+2018-09-12 18:55:26.218 [main] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on admin-PC with PID 3264 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 18:55:26.223 [main] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-09-12 18:55:28.827 [main] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 3.367 seconds (JVM running for 4.56)

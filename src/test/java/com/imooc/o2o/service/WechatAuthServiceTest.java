@@ -1,20 +1,18 @@
-package com.imooc.o2o.dao.service;
-
-import static org.junit.Assert.assertEquals;
-
-import java.util.Date;
-
-import com.imooc.o2o.service.WechatAuthService;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
+package com.imooc.o2o.service;
 
 import com.imooc.o2o.dto.WechatAuthExecution;
 import com.imooc.o2o.entity.PersonInfo;
 import com.imooc.o2o.entity.WechatAuth;
 import com.imooc.o2o.enums.WechatAuthStateEnum;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.Date;
+
+import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

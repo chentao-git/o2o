@@ -56,3 +56,37 @@
 2018-08-27 21:34:55.338 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
 2018-09-10 14:03:50.249 [main] DEBUG com.imooc.o2o.O2oApplication - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
 2018-09-10 14:04:16.796 [main] DEBUG com.imooc.o2o.O2oApplication - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 15:39:23.171 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 15:40:52.934 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 16:01:16.544 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 16:01:49.322 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 16:05:49.257 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 16:10:55.678 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 16:32:51.189 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 16:32:54.920 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2018-09-12 16:32:54.956 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2018-09-12 16:32:54.987 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2018-09-12 16:34:12.933 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 16:34:23.546 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2018-09-12 16:34:23.593 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2018-09-12 16:34:23.617 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2018-09-12 16:35:22.790 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 16:35:26.818 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2018-09-12 16:35:26.868 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2018-09-12 16:35:26.887 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2018-09-12 16:38:22.951 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 16:38:27.121 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2018-09-12 16:38:27.176 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2018-09-12 16:38:27.197 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2018-09-12 17:03:09.895 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 17:03:13.680 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2018-09-12 17:03:13.709 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2018-09-12 17:03:13.740 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2018-09-12 17:09:07.568 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 17:09:11.520 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2018-09-12 17:09:11.557 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2018-09-12 17:09:11.576 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2018-09-12 17:18:35.521 [main] DEBUG com.imooc.o2o.dao.AreaDaoTest - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-09-12 17:18:40.169 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC 
+2018-09-12 17:18:40.203 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2018-09-12 17:18:40.223 [main] DEBUG com.imooc.o2o.dao.AreaDao.queryArea - <==      Total: 2

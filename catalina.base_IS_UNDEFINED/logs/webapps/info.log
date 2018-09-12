@@ -125,3 +125,36 @@
 2018-09-10 14:04:16.793 [main] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on admin-PC with PID 3884 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
 2018-09-10 14:04:16.798 [main] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
 2018-09-10 14:04:19.225 [main] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 3.308 seconds (JVM running for 4.75)
+2018-09-12 15:39:23.170 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 9040 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 15:39:23.173 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 15:40:52.932 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 8672 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 15:40:52.936 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 16:01:16.543 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 8448 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 16:01:16.547 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 16:01:49.320 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 3416 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 16:01:49.324 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 16:05:49.255 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 4836 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 16:05:49.259 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 16:10:55.655 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 4384 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 16:10:55.680 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 16:32:51.187 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 6392 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 16:32:51.192 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 16:32:54.460 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Started AreaDaoTest in 4.418 seconds (JVM running for 6.966)
+2018-09-12 16:34:12.932 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 1464 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 16:34:12.936 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 16:34:17.096 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Started AreaDaoTest in 4.501 seconds (JVM running for 7.355)
+2018-09-12 16:35:22.789 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 8640 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 16:35:22.792 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 16:35:26.341 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Started AreaDaoTest in 4.103 seconds (JVM running for 5.693)
+2018-09-12 16:38:22.950 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 1752 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 16:38:22.953 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 16:38:26.630 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Started AreaDaoTest in 4.013 seconds (JVM running for 5.539)
+2018-09-12 17:03:09.893 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 8320 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 17:03:09.897 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 17:03:13.246 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Started AreaDaoTest in 4.203 seconds (JVM running for 6.132)
+2018-09-12 17:09:07.567 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 9052 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 17:09:07.577 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 17:09:11.052 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Started AreaDaoTest in 3.97 seconds (JVM running for 5.498)
+2018-09-12 17:18:35.521 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on admin-PC with PID 8208 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-12 17:18:35.524 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-12 17:18:39.606 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Started AreaDaoTest in 4.409 seconds (JVM running for 7.261)

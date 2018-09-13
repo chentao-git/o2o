@@ -40,3 +40,6 @@
 2018-09-13 18:32:00.052 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on admin-PC with PID 7928 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
 2018-09-13 18:32:00.060 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
 2018-09-13 18:32:03.251 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 3.772 seconds (JVM running for 4.973)
+2018-09-13 19:08:01.928 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on admin-PC with PID 9112 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-13 19:08:01.933 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-09-13 19:08:05.029 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 3.532 seconds (JVM running for 5.203)

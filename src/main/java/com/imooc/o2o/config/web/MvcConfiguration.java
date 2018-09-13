@@ -4,6 +4,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
@@ -34,7 +35,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter implements Applica
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/resources/");
+//        registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/resources/");
     }
 
     /**
@@ -51,6 +52,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter implements Applica
      *
      * @return
      */
+    @Bean(name = "viewResolver")
     public ViewResolver createViewResolver() {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         //设置spring容器
@@ -68,6 +70,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter implements Applica
      * 文件上传解析器
      * @return
      */
+    @Bean(name = "multipartResolver")
     public CommonsMultipartResolver createMultipartResolver() {
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
         multipartResolver.setDefaultEncoding("utf-8");

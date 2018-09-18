@@ -111,7 +111,7 @@ public class ImageUtil {
 	}
 
 	/**
-	 * 创建目标路径所涉及到的目录，即/home/work/xiangze/xxx.jpg, 那么 home work xiangze
+	 * 创建目标路径所涉及到的目录，即/home/work/xiangze/xxx.jpg, 那么 home work
 	 * 这三个文件夹都得自动创建
 	 * 
 	 * @param targetAddr
@@ -127,7 +127,7 @@ public class ImageUtil {
 	/**
 	 * 获取输入文件流的扩展名
 	 * 
-	 * @param thumbnail
+	 * @param fileName
 	 * @return
 	 */
 	private static String getFileExtension(String fileName) {

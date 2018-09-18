@@ -59,6 +59,11 @@
             <artifactId>c3p0</artifactId>
             <version>0.9.5.2</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.mchange.c3p0</groupId>-->
+            <!--<artifactId>com.springsource.com.mchange.v2.c3p0</artifactId>-->
+            <!--<version>0.9.1.2</version>-->
+        <!--</dependency>-->
         <!-- 图片处理 -->
         <!-- https://mvnrepository.com/artifact/net.coobird/thumbnailator -->
         <dependency>

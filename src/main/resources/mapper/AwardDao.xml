@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.imooc.o2o.dao.AwardDao">
+    <!--依据传入进来的查询条件分页显示奖品信息列表 -->
+    <select id="queryAwardList" resultType="com.imooc.o2o.entity.Award">
+        SELECT
+        award_id,
+        award_name,
+        award_desc,
+        award_img,
+        point,
+        priority,
+        create_time,
+        last_edit_time,
+        enable_status,
+        shop_id
+        FROM
+        tb_award
+        <where>
+            <!-- 按奖品名模糊查询 -->
+            <if test="awardCondition.awardName!=null">
+                and award_name like '%${awardCondition.awardName}%'
+            </if>
+            <!-- 按店铺查询 -->
+            <if test="awardCondition.shopId!=null">
+                and shop_id = #{awardCondition.shopId}
+            </if>
+            <!-- 按可用状态查询 -->
+            <if test="awardCondition.enableStatus!=null">
+                and enable_status = #{awardCondition.enableStatus}
+            </if>
+        </where>
+        ORDER BY
+        priority DESC
+        LIMIT #{rowIndex},#{pageSize};
+    </select>
+    <!-- 配合queryAwardList返回相同查询条件下的奖品数 -->
+    <select id="queryAwardCount" resultType="int">
+        SELECT count(1) FROM tb_award
+        <where>
+            <!-- 按奖品名模糊查询 -->
+            <if test="awardCondition.awardName!=null">
+                and award_name like '%${awardCondition.awardName}%'
+            </if>
+            <!-- 按店铺查询 -->
+            <if test="awardCondition.shopId!=null">
+                and shop_id = #{awardCondition.shopId}
+            </if>
+            <!-- 按可用状态查询 -->
+            <if test="awardCondition.enableStatus!=null">
+                and enable_status = #{awardCondition.enableStatus}
+            </if>
+        </where>
+    </select>
+    <!-- 根据awardId查询奖品信息 -->
+    <select id="queryAwardByAwardId" resultType="com.imooc.o2o.entity.Award" parameterType="Long">
+        SELECT
+		award_id,
+		award_name,
+		award_desc,
+		award_img,
+		point,
+		priority,
+		create_time,
+		last_edit_time,
+		enable_status,
+		shop_id
+		FROM
+		tb_award
+		WHERE
+		award_id = #{awardId}
+    </select>
+    <!-- 添加奖品信息 -->
+    <insert id="insertAward" parameterType="com.imooc.o2o.entity.Award" useGeneratedKeys="true" keyProperty="awardId" keyColumn="award_id">
+        INSERT INTO
+            tb_award(award_name,award_desc,award_img,
+            point,priority,create_time,
+            last_edit_time,enable_status,shop_id)
+        VALUES
+            (#{awardName},#{awardDesc},#{awardImg},
+            #{point},#{priority},#{createTime},
+            #{lastEditTime},#{enableStatus},#{shopId})
+    </insert>
+    <!-- 更新奖品信息 -->
+    <update id="updateAward" parameterType="com.imooc.o2o.entity.Award" useGeneratedKeys="true" keyColumn="award_id">
+        UPDATE tb_award
+        <set>
+            <if test="awardName != null">award_name=#{awardName},</if>
+            <if test="awardDesc != null">award_desc=#{awardDesc},</if>
+            <if test="awardImg != null">award_img=#{awardImg},</if>
+            <if test="point != null">point=#{point},</if>
+            <if test="priority != null">priority=#{priority},</if>
+            <if test="lastEditTime != null">last_edit_time=#{lastEditTime},</if>
+            <if test="enableStatus != null">enable_status=#{enableStatus}</if>
+        </set>
+        WHERE award_id = #{awardId}
+        AND shop_id = #{shopId}
+    </update>
+    <!-- 删除奖品信息 -->
+    <delete id="deleteAward">
+        DELETE FROM
+		tb_award
+		WHERE
+		award_id = #{awardId}
+		AND
+		shop_id = #{shopId}
+    </delete>
+</mapper>

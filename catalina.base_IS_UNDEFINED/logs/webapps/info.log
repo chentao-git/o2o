@@ -1,9 +1,12 @@
-2018-09-20 14:18:27.862 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 7668 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-09-20 14:18:27.967 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-09-20 14:18:38.835 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 12.349 seconds (JVM running for 19.343)
-2018-09-20 16:21:28.430 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 4032 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-09-20 16:21:28.438 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-09-20 16:21:36.217 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 8.588 seconds (JVM running for 10.773)
-2018-09-20 16:48:57.403 [main] INFO  com.imooc.o2o.dao.AwardDaoTest - Starting AwardDaoTest on JHGHGBMQFLDSVHU with PID 8796 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-09-20 16:48:57.409 [main] INFO  com.imooc.o2o.dao.AwardDaoTest - No active profile set, falling back to default profiles: default
-2018-09-20 16:49:03.690 [main] INFO  com.imooc.o2o.dao.AwardDaoTest - Started AwardDaoTest in 6.76 seconds (JVM running for 10.596)
+2018-09-24 20:41:07.762 [main] INFO  com.imooc.o2o.dao.AwardDaoTest - Starting AwardDaoTest on JHGHGBMQFLDSVHU with PID 7384 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-24 20:41:07.849 [main] INFO  com.imooc.o2o.dao.AwardDaoTest - No active profile set, falling back to default profiles: default
+2018-09-24 20:41:19.887 [main] INFO  com.imooc.o2o.dao.AwardDaoTest - Started AwardDaoTest in 13.528 seconds (JVM running for 18.136)
+2018-09-24 20:43:36.419 [main] INFO  com.imooc.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on JHGHGBMQFLDSVHU with PID 7016 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-24 20:43:36.467 [main] INFO  com.imooc.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
+2018-09-24 20:43:42.790 [main] INFO  com.imooc.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 7.499 seconds (JVM running for 9.758)
+2018-09-24 20:45:00.314 [main] INFO  com.imooc.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on JHGHGBMQFLDSVHU with PID 6484 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-24 20:45:00.320 [main] INFO  com.imooc.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
+2018-09-24 20:45:07.102 [main] INFO  com.imooc.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 7.328 seconds (JVM running for 12.066)
+2018-09-24 20:47:40.583 [main] INFO  com.imooc.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on JHGHGBMQFLDSVHU with PID 7448 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-24 20:47:40.587 [main] INFO  com.imooc.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
+2018-09-24 20:47:47.037 [main] INFO  com.imooc.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 7.337 seconds (JVM running for 9.467)

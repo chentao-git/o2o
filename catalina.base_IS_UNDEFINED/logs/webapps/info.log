@@ -19,3 +19,15 @@
 2018-09-25 15:28:08.784 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on JHGHGBMQFLDSVHU with PID 3436 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
 2018-09-25 15:28:08.788 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
 2018-09-25 15:28:15.051 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 7.186 seconds (JVM running for 9.03)
+2018-09-25 16:07:05.836 [main] INFO  com.imooc.o2o.dao.UserShopMapDaoTest - Starting UserShopMapDaoTest on JHGHGBMQFLDSVHU with PID 7656 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-25 16:07:05.849 [main] INFO  com.imooc.o2o.dao.UserShopMapDaoTest - No active profile set, falling back to default profiles: default
+2018-09-25 16:07:11.360 [main] INFO  com.imooc.o2o.dao.UserShopMapDaoTest - Started UserShopMapDaoTest in 6.854 seconds (JVM running for 9.502)
+2018-09-25 16:22:21.453 [main] INFO  com.imooc.o2o.dao.ShopAuthMapDaoTest - Starting ShopAuthMapDaoTest on JHGHGBMQFLDSVHU with PID 8680 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-25 16:22:21.457 [main] INFO  com.imooc.o2o.dao.ShopAuthMapDaoTest - No active profile set, falling back to default profiles: default
+2018-09-25 16:22:27.820 [main] INFO  com.imooc.o2o.dao.ShopAuthMapDaoTest - Started ShopAuthMapDaoTest in 7.172 seconds (JVM running for 9.124)
+2018-09-25 16:25:11.645 [main] INFO  com.imooc.o2o.dao.ShopAuthMapDaoTest - Starting ShopAuthMapDaoTest on JHGHGBMQFLDSVHU with PID 7308 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-25 16:25:11.650 [main] INFO  com.imooc.o2o.dao.ShopAuthMapDaoTest - No active profile set, falling back to default profiles: default
+2018-09-25 16:25:16.972 [main] INFO  com.imooc.o2o.dao.ShopAuthMapDaoTest - Started ShopAuthMapDaoTest in 6.607 seconds (JVM running for 9.013)
+2018-09-25 16:26:27.095 [main] INFO  com.imooc.o2o.dao.ShopAuthMapDaoTest - Starting ShopAuthMapDaoTest on JHGHGBMQFLDSVHU with PID 6444 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-25 16:26:27.100 [main] INFO  com.imooc.o2o.dao.ShopAuthMapDaoTest - No active profile set, falling back to default profiles: default
+2018-09-25 16:26:32.365 [main] INFO  com.imooc.o2o.dao.ShopAuthMapDaoTest - Started ShopAuthMapDaoTest in 6.912 seconds (JVM running for 8.873)

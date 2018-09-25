@@ -2,7 +2,7 @@ package com.imooc.o2o.entity;
 
 import java.util.Date;
 
-//顾客消费的商品映射
+//商品的销量映射
 public class ProductSellDaily {
 	// 主键Id
 	private Long productSellDailyId;

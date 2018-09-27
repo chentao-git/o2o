@@ -8,10 +8,12 @@ import com.imooc.o2o.exceptions.ShopAuthMapOperationException;
 import com.imooc.o2o.service.ShopAuthMapService;
 import com.imooc.o2o.util.PageCalculator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
 
+@Service
 public class ShopAuthMapServiceImpl implements ShopAuthMapService {
     @Autowired
     private ShopAuthMapDao shopAuthMapDao;

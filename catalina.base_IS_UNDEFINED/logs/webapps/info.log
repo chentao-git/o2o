@@ -1,24 +1,21 @@
-2018-09-27 09:45:43.231 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 6412 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-09-27 09:45:43.322 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-09-27 09:51:37.975 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 7712 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-09-27 09:51:37.985 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-09-27 10:15:50.247 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 7312 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-09-27 10:15:50.254 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-09-27 10:15:56.404 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 7.142 seconds (JVM running for 9.426)
-2018-09-27 10:38:53.468 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 5176 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-09-27 10:38:53.478 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-09-27 10:38:58.995 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.17 seconds (JVM running for 8.134)
-2018-09-27 14:11:05.080 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 6584 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-09-27 14:11:05.104 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-09-27 14:11:14.468 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 10.427 seconds (JVM running for 15.136)
-2018-09-27 16:49:31.395 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 8980 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-09-27 16:49:31.403 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-09-27 16:49:36.469 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 5.779 seconds (JVM running for 7.984)
-2018-09-27 16:50:23.549 [http-nio-8080-exec-1] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"status":0,"tinyurl":"https://dwz.cn/zJHSecyz","longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd7f6c5b8899fba83\u0026redirect_uri=http://o2o.yitiaojieinfo.com/o2o/shopadmin/addshopauthmap\u0026response_type=code\u0026scope=snsapi_userinfo\u0026state=%7BaaashopIdaaa%3A28%2CaaacreateTimeaaa%3A1538038223349%7D#wechat_redirect","err_msg":""}
-2018-09-27 16:50:23.585 [http-nio-8080-exec-1] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: https://dwz.cn/zJHSecyz
-2018-09-27 16:50:46.339 [http-nio-8080-exec-10] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"status":0,"tinyurl":"https://dwz.cn/fyvff7Sl","longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd7f6c5b8899fba83\u0026redirect_uri=http://o2o.yitiaojieinfo.com/o2o/shopadmin/addshopauthmap\u0026response_type=code\u0026scope=snsapi_userinfo\u0026state=%7BaaashopIdaaa%3A28%2CaaacreateTimeaaa%3A1538038246235%7D#wechat_redirect","err_msg":""}
-2018-09-27 16:50:46.340 [http-nio-8080-exec-10] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: https://dwz.cn/fyvff7Sl
-2018-09-27 17:34:04.926 [http-nio-8080-exec-6] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"status":0,"tinyurl":"https://dwz.cn/GKhqrJIU","longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd7f6c5b8899fba83\u0026redirect_uri=http://o2o.yitiaojieinfo.com/o2o/shopadmin/addshopauthmap\u0026response_type=code\u0026scope=snsapi_userinfo\u0026state=%7BaaashopIdaaa%3A28%2CaaacreateTimeaaa%3A1538040844785%7D#wechat_redirect","err_msg":""}
-2018-09-27 17:34:04.927 [http-nio-8080-exec-6] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: https://dwz.cn/GKhqrJIU
-2018-09-27 17:34:11.476 [http-nio-8080-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"status":0,"tinyurl":"https://dwz.cn/2haNaEaw","longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd7f6c5b8899fba83\u0026redirect_uri=http://o2o.yitiaojieinfo.com/o2o/shopadmin/addshopauthmap\u0026response_type=code\u0026scope=snsapi_userinfo\u0026state=%7BaaashopIdaaa%3A1%2CaaacreateTimeaaa%3A1538040851305%7D#wechat_redirect","err_msg":""}
-2018-09-27 17:34:11.476 [http-nio-8080-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: https://dwz.cn/2haNaEaw
+2018-09-29 09:29:16.909 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Starting AreaDaoTest on JHGHGBMQFLDSVHU with PID 7032 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-29 09:29:16.988 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-09-29 09:29:29.120 [main] INFO  com.imooc.o2o.dao.AreaDaoTest - Started AreaDaoTest in 13.511 seconds (JVM running for 18.481)
+2018-09-29 09:30:27.926 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Starting AreaServiceTest on JHGHGBMQFLDSVHU with PID 3156 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-29 09:30:27.931 [main] INFO  com.imooc.o2o.service.AreaServiceTest - No active profile set, falling back to default profiles: default
+2018-09-29 09:30:34.578 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Started AreaServiceTest in 8.034 seconds (JVM running for 10.536)
+2018-09-29 09:50:40.993 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Starting AreaServiceTest on JHGHGBMQFLDSVHU with PID 7540 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-29 09:50:40.999 [main] INFO  com.imooc.o2o.service.AreaServiceTest - No active profile set, falling back to default profiles: default
+2018-09-29 09:50:47.943 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Started AreaServiceTest in 7.452 seconds (JVM running for 10.846)
+2018-09-29 10:42:45.855 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Starting AreaServiceTest on JHGHGBMQFLDSVHU with PID 9112 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-29 10:42:45.860 [main] INFO  com.imooc.o2o.service.AreaServiceTest - No active profile set, falling back to default profiles: default
+2018-09-29 10:42:52.378 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Started AreaServiceTest in 8.185 seconds (JVM running for 10.697)
+2018-09-29 10:44:11.827 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Starting AreaServiceTest on JHGHGBMQFLDSVHU with PID 7164 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-29 10:44:11.831 [main] INFO  com.imooc.o2o.service.AreaServiceTest - No active profile set, falling back to default profiles: default
+2018-09-29 10:44:18.970 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Started AreaServiceTest in 8.271 seconds (JVM running for 10.708)
+2018-09-29 12:23:46.271 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Starting AreaServiceTest on JHGHGBMQFLDSVHU with PID 6400 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-29 12:23:46.277 [main] INFO  com.imooc.o2o.service.AreaServiceTest - No active profile set, falling back to default profiles: default
+2018-09-29 12:23:53.807 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Started AreaServiceTest in 8.821 seconds (JVM running for 11.806)
+2018-09-29 12:25:05.612 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 6236 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-09-29 12:25:05.620 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-09-29 12:25:13.303 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 8.144 seconds (JVM running for 11.411)

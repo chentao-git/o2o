@@ -23,7 +23,7 @@ public class AreaServiceTest  {
 	public void testGetAreaList() {
 		List<Area> areaList = areaService.getAreaList();
 		assertEquals("西苑", areaList.get(0).getAreaName());
-//		cacheService.removeFromCache(areaService.AREALISTKEY);
-//		areaList = areaService.getAreaList();
+		cacheService.removeFromCache(areaService.AREALISTKEY);
+		areaList = areaService.getAreaList();
 	}
 }

@@ -35,8 +35,8 @@ public class AreaServiceImpl implements AreaService {
 	@Override
 	@Transactional
 	public List<Area> getAreaList() {
-		List<Area> areaList = areaDao.queryArea();
-		/*
+//		List<Area> areaList = areaDao.queryArea();
+
 		// 定义redis的key
 		String key = AREALISTKEY;
 		// 定义接收对象
@@ -79,7 +79,7 @@ public class AreaServiceImpl implements AreaService {
 				throw new AreaOperationException(e.getMessage());
 			}
 		}
-		*/
+
 		return areaList;
 	}
 

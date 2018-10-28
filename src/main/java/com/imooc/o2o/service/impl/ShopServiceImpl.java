@@ -3,6 +3,8 @@ package com.imooc.o2o.service.impl;
 import java.util.Date;
 import java.util.List;
 
+import com.imooc.o2o.dao.ShopAuthMapDao;
+import com.imooc.o2o.entity.ShopAuthMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -22,6 +24,8 @@ import com.imooc.o2o.util.PathUtil;
 public class ShopServiceImpl implements ShopService {
 	@Autowired
 	private ShopDao shopDao;
+	@Autowired
+	private ShopAuthMapDao shopAuthMapDao;
 
 	@Override
 	public ShopExecution getShopList(Shop shopCondition, int pageIndex, int pageSize) {
@@ -106,6 +110,25 @@ public class ShopServiceImpl implements ShopService {
 					if (effectedNum <= 0) {
 						throw new ShopOperationException("更新图片地址失败");
 					}
+					// 执行增加shopAuthMap授权操作给店家授权
+					ShopAuthMap shopAuthMap = new ShopAuthMap();
+					shopAuthMap.setEmployee(shop.getOwner());
+					shopAuthMap.setShop(shop);
+					shopAuthMap.setTitle("店家");
+					shopAuthMap.setTitleFlag(0);
+					shopAuthMap.setCreateTime(new Date());
+					shopAuthMap.setLastEditTime(new Date());
+					shopAuthMap.setEnableStatus(1);
+					try {
+						effectedNum = shopAuthMapDao.insertShopAuthMap(shopAuthMap);
+						if (effectedNum <= 0) {
+							throw new ShopOperationException("授权创建失败");
+						}
+					} catch (Exception e) {
+						throw new ShopOperationException("insertShopAuthMap error: " + e.getMessage());
+					}
+
+
 				}
 			}
 		} catch (Exception e) {

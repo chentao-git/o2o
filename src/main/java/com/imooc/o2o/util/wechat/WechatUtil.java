@@ -53,6 +53,7 @@ public class WechatUtil {
 		// 向相应URL发送请求获取token json字符串
 		String tokenStr = httpsRequest(url, "GET", null);
 		log.debug("userAccessToken:" + tokenStr);
+		//接收微信携带信息实体类
 		UserAccessToken token = new UserAccessToken();
 		ObjectMapper objectMapper = new ObjectMapper();
 		try {

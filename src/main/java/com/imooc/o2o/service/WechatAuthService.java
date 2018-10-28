@@ -16,11 +16,9 @@ public interface WechatAuthService {
 
 	/**
 	 * 注册本平台的微信帐号
-	 * 
 	 * @param wechatAuth
-	 * @param profileImg
 	 * @return
-	 * @throws RuntimeException
+	 * @throws WechatAuthOperationException
 	 */
 	WechatAuthExecution register(WechatAuth wechatAuth) throws WechatAuthOperationException;
 

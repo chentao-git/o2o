@@ -25,6 +25,11 @@ public class WechatAuthServiceImpl implements WechatAuthService {
 	@Autowired
 	private PersonInfoDao personInfoDao;
 
+	/**
+	 * 根据微信携带的openid去查询我们数据库是否存在
+	 * @param openId
+	 * @return
+	 */
 	@Override
 	public WechatAuth getWechatAuthByOpenId(String openId) {
 		return wechatAuthDao.queryWechatInfoByOpenId(openId);

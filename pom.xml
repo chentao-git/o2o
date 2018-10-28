@@ -54,11 +54,13 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
         <dependency>
-            <groupId>c3p0</groupId>
+            <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
             <version>0.9.5.2</version>
         </dependency>
+
         <!--<dependency>-->
             <!--<groupId>com.mchange.c3p0</groupId>-->
             <!--<artifactId>com.springsource.com.mchange.v2.c3p0</artifactId>-->

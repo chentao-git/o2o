@@ -40,7 +40,13 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter implements Applica
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 //        registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/resources/");
-        registry.addResourceHandler("/upload/**").addResourceLocations("file:D:/projectdev/image/upload/");
+        String os = System.getProperty("os.name");
+        //配置静态文件路径 代替tomcate中service.xml的配置
+        if (os.toLowerCase().startsWith("win")) {//根据系统不同而路径不同
+            registry.addResourceHandler("/upload/**").addResourceLocations("file:D:/projectdev/image/upload/");
+        } else {
+            registry.addResourceHandler("/upload/**").addResourceLocations("file:/Users/baidu/work/image/upload/");
+        }
     }
 
     /**

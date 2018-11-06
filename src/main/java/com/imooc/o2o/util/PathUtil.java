@@ -1,10 +1,13 @@
 package com.imooc.o2o.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class PathUtil {
+    private static Logger logger = LoggerFactory.getLogger(PathUtil.class);
 	private static String seperator = System.getProperty("file.separator");
 
 	private static String winPath;
@@ -37,6 +40,7 @@ public class PathUtil {
 			basePath = linuxPath;
 		}
 		basePath = basePath.replace("/", seperator);
+        logger.debug("服务器为："+os+"basePath:"+basePath);
 		return basePath;
 	}
 

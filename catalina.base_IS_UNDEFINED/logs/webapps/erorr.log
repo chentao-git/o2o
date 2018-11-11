@@ -1,6 +1,4 @@
-2018-09-21 10:59:10.826 [http-nio-8080-exec-1] ERROR com.imooc.o2o.util.ImageUtil - javax.imageio.IIOException: Unsupported Image Type
-2018-09-21 10:59:27.808 [http-nio-8080-exec-3] ERROR com.imooc.o2o.util.ImageUtil - javax.imageio.IIOException: Unsupported Image Type
-2018-09-21 11:04:57.892 [http-nio-8080-exec-5] ERROR com.imooc.o2o.util.ImageUtil - javax.imageio.IIOException: Unsupported Image Type
-2018-09-21 13:43:13.522 [http-nio-8080-exec-6] ERROR com.imooc.o2o.util.ImageUtil - javax.imageio.IIOException: Unsupported Image Type
-2018-09-21 13:46:08.966 [http-nio-8080-exec-9] ERROR com.imooc.o2o.util.ImageUtil - javax.imageio.IIOException: Unsupported Image Type
-2018-09-21 13:49:24.036 [http-nio-8080-exec-5] ERROR com.imooc.o2o.util.ImageUtil - javax.imageio.IIOException: Unsupported Image Type
+2018-11-11 20:14:28.966 [http-nio-8080-exec-1] ERROR com.imooc.o2o.util.wechat.WechatUtil - 获取用户accessToken失败: Unrecognized field "errcode" (class com.imooc.o2o.dto.UserAccessToken), not marked as ignorable (5 known properties: "expires_in", "scope", "refresh_token", "access_token", "openid"])
+ at [Source: (String)"{"errcode":40163,"errmsg":"code been used, hints: [ req_id: p8HZ.A02102042 ]"}"; line: 1, column: 17] (through reference chain: com.imooc.o2o.dto.UserAccessToken["errcode"])
+2018-11-11 20:16:04.588 [http-nio-8080-exec-1] ERROR com.imooc.o2o.util.wechat.WechatUtil - 获取用户信息失败: Unrecognized field "errcode" (class com.imooc.o2o.dto.WechatUser), not marked as ignorable (9 known properties: "province", "privilege", "openid", "sex", "language", "city", "headimgurl", "nickname", "country"])
+ at [Source: (String)"{"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest, hints: [ req_id: 8CIyka05153933 ]"}"; line: 1, column: 17] (through reference chain: com.imooc.o2o.dto.WechatUser["errcode"])

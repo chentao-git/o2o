@@ -1,70 +1,33 @@
-2018-11-06 21:23:01.906 [restartedMain] DEBUG com.imooc.o2o.O2oApplication - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
-2018-11-06 21:23:39.238 [restartedMain] DEBUG com.imooc.o2o.O2oApplication - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
-2018-11-06 21:24:02.481 [http-nio-8080-exec-6] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is null ORDER BY priority DESC 
-2018-11-06 21:24:02.501 [http-nio-8080-exec-6] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
-2018-11-06 21:24:02.693 [http-nio-8080-exec-6] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 6
-2018-11-06 21:24:02.708 [http-nio-8080-exec-6] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is null ORDER BY priority DESC 
-2018-11-06 21:24:02.708 [http-nio-8080-exec-6] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
-2018-11-06 21:24:02.739 [http-nio-8080-exec-6] DEBUG c.imooc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 6
-2018-11-06 21:24:02.793 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.HeadLineDao.queryHeadLine - ==>  Preparing: SELECT line_id, line_name, line_link, line_img, priority, enable_status, create_time, last_edit_time FROM tb_head_line WHERE enable_status = ? ORDER BY priority DESC 
-2018-11-06 21:24:02.794 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.HeadLineDao.queryHeadLine - ==> Parameters: 1(Integer)
-2018-11-06 21:24:02.817 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.HeadLineDao.queryHeadLine - <==      Total: 4
-2018-11-06 21:24:36.029 [http-nio-8080-exec-9] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
-2018-11-06 21:24:36.030 [http-nio-8080-exec-9] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testbind(String), yesbq55y2205l9sb2ls5ey25l5eq629q(String)
-2018-11-06 21:24:36.047 [http-nio-8080-exec-9] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
-2018-11-06 21:24:36.210 [http-nio-8080-exec-8] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id= a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,? 
-2018-11-06 21:24:36.211 [http-nio-8080-exec-8] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
-2018-11-06 21:24:36.275 [http-nio-8080-exec-8] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 14
-2018-11-06 21:24:36.276 [http-nio-8080-exec-8] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id= a.area_id AND s.shop_category_id = sc.shop_category_id 
-2018-11-06 21:24:36.276 [http-nio-8080-exec-8] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
-2018-11-06 21:24:36.292 [http-nio-8080-exec-8] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
-2018-11-06 21:24:55.381 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
-2018-11-06 21:24:55.382 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - ==> Parameters: 1(Long), 0(Integer), 999(Integer)
-2018-11-06 21:24:55.399 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - <==      Total: 5
-2018-11-06 21:24:55.400 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
-2018-11-06 21:24:55.401 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 1(Long)
-2018-11-06 21:24:55.418 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
-2018-11-06 21:24:57.389 [http-nio-8080-exec-10] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
-2018-11-06 21:24:57.389 [http-nio-8080-exec-10] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - ==> Parameters: 18(Long)
-2018-11-06 21:24:57.445 [http-nio-8080-exec-10] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - <==      Total: 1
-2018-11-06 21:24:59.896 [http-nio-8080-exec-2] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
-2018-11-06 21:24:59.896 [http-nio-8080-exec-2] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - ==> Parameters: 1(Long), 0(Integer), 999(Integer)
-2018-11-06 21:24:59.915 [http-nio-8080-exec-2] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - <==      Total: 5
-2018-11-06 21:24:59.916 [http-nio-8080-exec-2] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
-2018-11-06 21:24:59.916 [http-nio-8080-exec-2] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 1(Long)
-2018-11-06 21:24:59.927 [http-nio-8080-exec-2] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
-2018-11-06 21:25:09.902 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
-2018-11-06 21:25:09.903 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - ==> Parameters: 18(Long)
-2018-11-06 21:25:09.928 [http-nio-8080-exec-6] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - <==      Total: 1
-2018-11-06 21:25:30.389 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
-2018-11-06 21:25:30.389 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - ==> Parameters: 1(Long), 0(Integer), 999(Integer)
-2018-11-06 21:25:30.412 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.dao.ProductDao.queryProductList - <==      Total: 5
-2018-11-06 21:25:30.413 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
-2018-11-06 21:25:30.413 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 1(Long)
-2018-11-06 21:25:30.433 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
-2018-11-06 21:25:34.307 [http-nio-8080-exec-2] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
-2018-11-06 21:25:34.308 [http-nio-8080-exec-2] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - ==> Parameters: 18(Long)
-2018-11-06 21:25:34.330 [http-nio-8080-exec-2] DEBUG com.imooc.o2o.dao.ProductDao.queryProductById - <==      Total: 1
-2018-11-06 21:25:34.332 [http-nio-8080-exec-2] DEBUG c.i.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id,product_category_name,priority,create_time,shop_id FROM tb_product_category WHERE shop_id=? ORDER BY priority DESC 
-2018-11-06 21:25:34.333 [http-nio-8080-exec-2] DEBUG c.i.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
-2018-11-06 21:25:34.356 [http-nio-8080-exec-2] DEBUG c.i.o.d.P.queryProductCategoryList - <==      Total: 3
-2018-11-06 21:26:03.993 [http-nio-8080-exec-5] DEBUG c.imooc.o2o.dao.ProductImgDao.queryProductImgList - ==>  Preparing: SELECT product_img_id, img_addr, img_desc, priority, create_time, product_id FROM tb_product_img WHERE product_id=? ORDER BY product_img_id ASC 
-2018-11-06 21:26:03.994 [http-nio-8080-exec-5] DEBUG c.imooc.o2o.dao.ProductImgDao.queryProductImgList - ==> Parameters: 18(Long)
-2018-11-06 21:26:04.009 [http-nio-8080-exec-5] DEBUG c.imooc.o2o.dao.ProductImgDao.queryProductImgList - <==      Total: 1
-2018-11-06 21:27:06.839 [http-nio-8080-exec-5] DEBUG com.imooc.o2o.util.PathUtil - 服务器为：Windows 7basePath:D:\projectdev\image
-2018-11-06 21:30:52.145 [http-nio-8080-exec-5] DEBUG com.imooc.o2o.util.PathUtil - 服务器为：Windows 7basePath:D:\projectdev\image
-2018-11-06 21:30:52.184 [http-nio-8080-exec-5] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==>  Preparing: DELETE FROM tb_product_img WHERE product_id = ? 
-2018-11-06 21:30:52.184 [http-nio-8080-exec-5] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - ==> Parameters: 18(Long)
-2018-11-06 21:30:52.256 [http-nio-8080-exec-5] DEBUG c.i.o.d.ProductImgDao.deleteProductImgByProductId - <==    Updates: 1
-2018-11-06 21:30:54.165 [http-nio-8080-exec-5] DEBUG com.imooc.o2o.util.PathUtil - 服务器为：Windows 7basePath:D:\projectdev\image
-2018-11-06 21:30:54.165 [http-nio-8080-exec-5] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :\upload\images\item\shop\1\2018110621305231988.jpg
-2018-11-06 21:30:55.093 [http-nio-8080-exec-5] DEBUG com.imooc.o2o.util.PathUtil - 服务器为：Windows 7basePath:D:\projectdev\image
-2018-11-06 21:30:56.940 [http-nio-8080-exec-5] DEBUG com.imooc.o2o.util.PathUtil - 服务器为：Windows 7basePath:D:\projectdev\image
-2018-11-06 21:30:56.940 [http-nio-8080-exec-5] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :D:\projectdev\image\upload\images\item\shop\1\2018110621305231988.jpg
-2018-11-06 21:30:57.569 [http-nio-8080-exec-5] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_addr,img_desc,priority, create_time,product_id) VALUES ( ?, ?, ?, ?, ? ) 
-2018-11-06 21:30:57.570 [http-nio-8080-exec-5] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: \upload\images\item\shop\1\2018110621305231988.jpg(String), null, null, 2018-11-06 21:30:57.564(Timestamp), 18(Long)
-2018-11-06 21:30:57.606 [http-nio-8080-exec-5] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 1
-2018-11-06 21:30:57.609 [http-nio-8080-exec-5] DEBUG com.imooc.o2o.dao.ProductDao.updateProduct - ==>  Preparing: UPDATE tb_product SET product_name=?, product_desc=?, normal_price=?, promotion_price=?, priority=?, last_edit_time=?, product_category_id=? WHERE product_id = ? AND shop_id=? 
-2018-11-06 21:30:57.610 [http-nio-8080-exec-5] DEBUG com.imooc.o2o.dao.ProductDao.updateProduct - ==> Parameters: 正式商品2(String), 正式商品描述(String), 100(String), 200(String), 100(Integer), 2018-11-06 21:26:03.993(Timestamp), 22(Long), 18(Long), 1(Long)
-2018-11-06 21:30:57.643 [http-nio-8080-exec-5] DEBUG com.imooc.o2o.dao.ProductDao.updateProduct - <==    Updates: 1
-2018-11-06 21:42:52.565 [restartedMain] DEBUG com.imooc.o2o.O2oApplication - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-11 19:41:46.472 [restartedMain] DEBUG com.imooc.o2o.O2oApplication - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-11 19:42:34.729 [http-nio-8080-exec-5] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2018-11-11 19:42:34.757 [http-nio-8080-exec-5] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testbind(String), yesbq55y2205l9sb2ls5ey25l5eq629q(String)
+2018-11-11 19:42:34.888 [http-nio-8080-exec-5] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2018-11-11 19:42:35.319 [http-nio-8080-exec-7] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id= a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,? 
+2018-11-11 19:42:35.320 [http-nio-8080-exec-7] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2018-11-11 19:42:35.392 [http-nio-8080-exec-7] DEBUG com.imooc.o2o.dao.ShopDao.queryShopList - <==      Total: 14
+2018-11-11 19:42:35.393 [http-nio-8080-exec-7] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id= a.area_id AND s.shop_category_id = sc.shop_category_id 
+2018-11-11 19:42:35.394 [http-nio-8080-exec-7] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2018-11-11 19:42:35.395 [http-nio-8080-exec-7] DEBUG com.imooc.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2018-11-11 19:44:18.075 [http-nio-8080-exec-2] DEBUG c.i.o.d.S.queryShopAuthMapListByShopId - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? LIMIT ?,?; 
+2018-11-11 19:44:18.075 [http-nio-8080-exec-2] DEBUG c.i.o.d.S.queryShopAuthMapListByShopId - ==> Parameters: 51(Long), 0(Integer), 9999(Integer)
+2018-11-11 19:44:18.097 [http-nio-8080-exec-2] DEBUG c.i.o.d.S.queryShopAuthMapListByShopId - <==      Total: 0
+2018-11-11 19:44:18.098 [http-nio-8080-exec-2] DEBUG c.i.o.d.ShopAuthMapDao.queryShopAuthCountByShopId - ==>  Preparing: SELECT count(1) FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? 
+2018-11-11 19:44:18.099 [http-nio-8080-exec-2] DEBUG c.i.o.d.ShopAuthMapDao.queryShopAuthCountByShopId - ==> Parameters: 51(Long)
+2018-11-11 19:44:18.107 [http-nio-8080-exec-2] DEBUG c.i.o.d.ShopAuthMapDao.queryShopAuthCountByShopId - <==      Total: 1
+2018-11-11 20:02:03.230 [restartedMain] DEBUG com.imooc.o2o.O2oApplication - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-11 20:07:53.988 [restartedMain] DEBUG com.imooc.o2o.O2oApplication - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-11 20:10:44.231 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.web.wechat.WechatLoginController - weixin login get...
+2018-11-11 20:10:48.535 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.web.wechat.WechatLoginController - weixin login code:0213cF0g04e9Az1vPsYf0NIq0g03cF0c
+2018-11-11 20:10:51.809 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.util.wechat.WechatUtil - appId:wxf3d60ffc3b690add
+2018-11-11 20:10:51.810 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.util.wechat.WechatUtil - secret:d8366ad3e083ed4558ccf9c4dbd44119
+2018-11-11 20:10:59.430 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.util.wechat.WechatUtil - https buffer:{"errcode":40163,"errmsg":"code been used, hints: [ req_id: p8HZ.A02102042 ]"}
+2018-11-11 20:11:01.972 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.util.wechat.WechatUtil - userAccessToken:{"errcode":40163,"errmsg":"code been used, hints: [ req_id: p8HZ.A02102042 ]"}
+2018-11-11 20:16:02.430 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.web.wechat.WechatLoginController - weixin login token:accessToken:null,openId:null
+2018-11-11 20:16:04.529 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.util.wechat.WechatUtil - https buffer:{"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest, hints: [ req_id: 8CIyka05153933 ]"}
+2018-11-11 20:16:04.529 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.util.wechat.WechatUtil - user info :{"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest, hints: [ req_id: 8CIyka05153933 ]"}
+2018-11-11 20:16:04.590 [http-nio-8080-exec-1] DEBUG com.imooc.o2o.web.wechat.WechatLoginController - weixin login user:openId:null,nikename:null
+2018-11-11 20:16:04.898 [http-nio-8080-exec-1] DEBUG c.i.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==>  Preparing: SELECT w.wechat_auth_id, w.open_id, w.create_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_wechat_auth w LEFT JOIN tb_person_info p ON w.user_id = p.user_id WHERE w.open_id = ? 
+2018-11-11 20:16:04.926 [http-nio-8080-exec-1] DEBUG c.i.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==> Parameters: null
+2018-11-11 20:16:04.941 [http-nio-8080-exec-1] DEBUG c.i.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - <==      Total: 0
+2018-11-11 20:33:36.991 [restartedMain] DEBUG com.imooc.o2o.O2oApplication - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE
+2018-11-11 20:39:47.072 [restartedMain] DEBUG com.imooc.o2o.O2oApplication - Running with Spring Boot v2.0.4.RELEASE, Spring v5.0.8.RELEASE

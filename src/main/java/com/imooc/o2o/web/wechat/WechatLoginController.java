@@ -24,9 +24,9 @@ import com.imooc.o2o.util.wechat.WechatUtil;
 
 /**
  * 获取关注公众号之后的微信用户信息的接口，如果在微信浏览器里访问
- * https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxd7f6c5b8899fba83&redirect_uri=http://o2o.yitiaojieinfo.com/o2o/wechatlogin/logincheck&role_type=1&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect
+ * https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf3d60ffc3b690add&redirect_uri=http://www.chentao.fun/o2o/wechatlogin/logincheck&role_type=1&response_type=code&scope=snsapi_userinfo&state=1#wechat_redirect
  * 则这里将会获取到code,之后再可以通过code获取到access_token 进而获取到用户信息
- * 
+ *
  * @author xiangze
  *
  */
@@ -75,6 +75,7 @@ public class WechatLoginController {
 		}
 		// 若微信帐号为空则需要注册微信帐号，同时注册用户信息
 		if (auth == null) {
+			log.info("微信号第一次关注给其注册微信账号，同时注册用户信息");
 			PersonInfo personInfo = WechatUtil.getPersonInfoFromRequest(user);
 			auth = new WechatAuth();
 			auth.setOpenId(openId);
@@ -94,8 +95,10 @@ public class WechatLoginController {
 		}
 		//若用户点击的是前端展示系统按钮则进入前端展示系统
 		if (FRONTEND.equals(roleType)) {
+			log.info("准备跳入前端");
 			return "frontend/index";
 		} else {
+			log.info("准备跳入后台");
 			return "shop/shoplist";
 		}
 	}

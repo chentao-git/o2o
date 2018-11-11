@@ -18,6 +18,8 @@ import com.imooc.o2o.util.CodeUtil;
 import com.imooc.o2o.util.HttpServletRequestUtil;
 import com.imooc.o2o.util.ShortNetAddressUtil;
 import com.imooc.o2o.util.wechat.WechatUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -38,6 +40,9 @@ import java.util.Map;
 @Controller
 @RequestMapping("/shopadmin")
 public class ShopAuthManagementController {
+
+    private static Logger log = LoggerFactory.getLogger(ShopAuthManagementController.class);
+
     @Autowired
     private ShopAuthMapService shopAuthMapService;
 
@@ -232,6 +237,7 @@ public class ShopAuthManagementController {
 
     @RequestMapping(value = "/addshopauthmap", method = RequestMethod.GET)
     private String addShopAuthMap(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        log.debug("添加权限开始");
         // 从request里面获取微信用户的信息openid这些
         WechatAuth auth = getEmployeeInfo(request);
         if (auth != null) {
@@ -319,6 +325,7 @@ public class ShopAuthManagementController {
                 token = WechatUtil.getUserAccessToken(code);
                 String openId = token.getOpenId();
                 request.getSession().setAttribute("openId", openId);
+                log.debug("openId-------"+openId);
                 //根据openid去查询在数据库的信息
                 auth = wechatAuthService.getWechatAuthByOpenId(openId);
             } catch (IOException e) {

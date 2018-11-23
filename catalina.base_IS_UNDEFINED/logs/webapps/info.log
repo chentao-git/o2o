@@ -1,18 +1,12 @@
-2018-11-11 19:41:46.316 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 7124 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-11 19:41:46.482 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-11-11 19:41:57.801 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 13.203 seconds (JVM running for 19.844)
-2018-11-11 19:44:18.424 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"status":0,"tinyurl":"https://dwz.cn/b5ntlBKz","longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf3d60ffc3b690add\u0026redirect_uri=http://www.chentao.fun/o2o/shopadmin/addshopauthmap\u0026response_type=code\u0026scope=snsapi_userinfo\u0026state=%7BaaashopIdaaa%3A51%2CaaacreateTimeaaa%3A1541936657988%7D#wechat_redirect","err_msg":""}
-2018-11-11 19:44:18.463 [http-nio-8080-exec-9] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: https://dwz.cn/b5ntlBKz
-2018-11-11 20:02:03.224 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 3556 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-11 20:02:03.234 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-11-11 20:02:08.639 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 5.899 seconds (JVM running for 9.617)
-2018-11-11 20:07:53.982 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 4828 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-11 20:07:53.991 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-11-11 20:07:59.543 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.478 seconds (JVM running for 8.936)
-2018-11-11 20:16:04.945 [http-nio-8080-exec-1] INFO  com.imooc.o2o.web.wechat.WechatLoginController - 微信号第一次关注给其注册微信账号，同时注册用户信息
-2018-11-11 20:33:36.986 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 7220 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-11 20:33:36.994 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-11-11 20:33:42.658 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.61 seconds (JVM running for 8.868)
-2018-11-11 20:39:47.068 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 6652 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-11 20:39:47.080 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-11-11 20:39:51.472 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 5.21 seconds (JVM running for 6.744)
+2018-11-23 22:47:36.294 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on JHGHGBMQFLDSVHU with PID 6700 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-11-23 22:47:36.311 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
+2018-11-23 22:47:52.851 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 17.639 seconds (JVM running for 19.647)
+2018-11-23 22:55:27.361 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on JHGHGBMQFLDSVHU with PID 5156 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-11-23 22:55:27.368 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
+2018-11-23 22:55:43.225 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 17.537 seconds (JVM running for 19.611)
+2018-11-23 22:59:42.413 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on JHGHGBMQFLDSVHU with PID 4460 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-11-23 22:59:42.448 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
+2018-11-23 22:59:50.076 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 8.437 seconds (JVM running for 10.455)
+2018-11-23 23:00:45.368 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on JHGHGBMQFLDSVHU with PID 6700 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-11-23 23:00:45.373 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
+2018-11-23 23:00:52.483 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 7.981 seconds (JVM running for 10.092)

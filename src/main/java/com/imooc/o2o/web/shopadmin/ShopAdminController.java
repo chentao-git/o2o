@@ -70,5 +70,9 @@ public class ShopAdminController {
 		// 转发至操作成功的页面
 		return "shop/operationfail";
 	}
-
+	@RequestMapping(value = "/productbuycheck", method = RequestMethod.GET)
+	private String productbuycheck() {
+		// 转发至店铺的消费记录的页面
+		return "shop/productbuycheck";
+	}
 }

@@ -6,9 +6,11 @@ import com.imooc.o2o.entity.UserProductMap;
 import com.imooc.o2o.service.UserProductMapService;
 import com.imooc.o2o.util.PageCalculator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class UserProductMapServiceImpl implements UserProductMapService {
     @Autowired
     private UserProductMapDao userProductMapDao;

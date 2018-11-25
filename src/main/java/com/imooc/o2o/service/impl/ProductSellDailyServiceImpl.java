@@ -23,10 +23,12 @@ public class ProductSellDailyServiceImpl implements ProductSellDailyService {
      */
     @Override
     public void dailyCalculate() {
-         //添加上一天所有销量的产品
-         productSellDailyDao.insertProductSellDaily();
-         //补充上一天无销量的产品
-         log.debug("Quartz 定时跑起来了！！！");
+        //添加上一天所有销量的产品
+        productSellDailyDao.insertProductSellDaily();
+        //添加上一天无销量的产品
+        productSellDailyDao.insertDefaultProductSellDaily();
+        //补充上一天无销量的产品
+        log.debug("Quartz 定时跑起来了！！！");
     }
 
     /**

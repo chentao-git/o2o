@@ -43,7 +43,7 @@ public class ProductSellDailyDaoTest {
     public void testBInsertDefaultProductSellDaily() throws Exception {
         // 创建商品日销量统计
         int effectedNum = productSellDailyDao.insertDefaultProductSellDaily();
-        assertEquals(18, effectedNum);
+        assertEquals(15, effectedNum);
     }
 
     /**

@@ -1,7 +1,12 @@
-2018-11-24 23:26:47.820 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on JHGHGBMQFLDSVHU with PID 6428 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-24 23:26:47.893 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
-2018-11-24 23:28:08.745 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 6984 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-24 23:28:08.751 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-11-24 23:31:03.629 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 6708 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-24 23:31:03.636 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-11-24 23:31:09.301 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.333 seconds (JVM running for 7.953)
+2018-11-25 21:36:13.318 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on JHGHGBMQFLDSVHU with PID 7840 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-11-25 21:36:13.375 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
+2018-11-25 21:36:26.678 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 14.841 seconds (JVM running for 19.889)
+2018-11-25 21:37:51.764 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on JHGHGBMQFLDSVHU with PID 3244 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-11-25 21:37:51.770 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
+2018-11-25 21:38:00.526 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 9.883 seconds (JVM running for 12.294)
+2018-11-25 21:38:18.920 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest on JHGHGBMQFLDSVHU with PID 1884 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-11-25 21:38:18.926 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - No active profile set, falling back to default profiles: default
+2018-11-25 21:38:27.136 [main] INFO  com.imooc.o2o.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 9.491 seconds (JVM running for 11.694)
+2018-11-25 21:39:30.318 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 6392 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-11-25 21:39:30.323 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-11-25 21:39:36.207 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.537 seconds (JVM running for 9.438)

@@ -75,4 +75,9 @@ public class ShopAdminController {
 		// 转发至店铺的消费记录的页面
 		return "shop/productbuycheck";
 	}
+	@RequestMapping(value = "/usershopcheck", method = RequestMethod.GET)
+	private String usershopcheck() {
+		// 店铺用户积分统计路由
+		return "shop/usershopcheck";
+	}
 }

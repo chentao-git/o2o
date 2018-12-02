@@ -47,4 +47,14 @@ public class FrontendController {
 	private String showProductDetail() {
 		return "frontend/productdetail";
 	}
+	/**
+	 * 奖品详情页路由
+	 *
+	 * @return
+	 */
+	@RequestMapping(value = "/myawarddetail", method = RequestMethod.GET)
+	private String showMyAwardDetail() {
+		return "frontend/myawarddetail";
+	}
+
 }

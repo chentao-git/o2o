@@ -1,12 +1,26 @@
-2018-11-26 21:54:33.538 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 7076 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-26 21:54:33.657 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-11-26 21:54:52.990 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 20.655 seconds (JVM running for 28.769)
-2018-11-26 22:19:18.068 [http-nio-80-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"status":0,"tinyurl":"https://dwz.cn/1ZHZ5UgC","longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf3d60ffc3b690add\u0026redirect_uri=http://www.chentao.fun/o2o/shopadmin/addshopauthmap\u0026response_type=code\u0026scope=snsapi_userinfo\u0026state=%7BaaashopIdaaa%3A29%2CaaacreateTimeaaa%3A1543241957797%7D#wechat_redirect","err_msg":""}
-2018-11-26 22:19:18.103 [http-nio-80-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: https://dwz.cn/1ZHZ5UgC
-2018-11-26 22:19:40.436 [http-nio-80-exec-8] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"status":0,"tinyurl":"https://dwz.cn/Tbub6csU","longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf3d60ffc3b690add\u0026redirect_uri=http://www.chentao.fun/o2o/shopadmin/addshopauthmap\u0026response_type=code\u0026scope=snsapi_userinfo\u0026state=%7BaaashopIdaaa%3A29%2CaaacreateTimeaaa%3A1543241980249%7D#wechat_redirect","err_msg":""}
-2018-11-26 22:19:40.437 [http-nio-80-exec-8] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: https://dwz.cn/Tbub6csU
-2018-11-26 22:54:10.144 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 3096 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-26 22:54:10.151 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-11-26 22:57:16.829 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 7976 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-11-26 22:57:16.836 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-11-26 22:57:21.387 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 5.232 seconds (JVM running for 7.07)
+2018-12-02 16:33:11.921 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 4920 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-12-02 16:33:11.993 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-12-02 16:33:24.992 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 14.929 seconds (JVM running for 22.08)
+2018-12-02 16:34:39.381 [http-nio-80-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - response string: {"status":0,"tinyurl":"https://dwz.cn/a4iNOrNf","longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxf3d60ffc3b690add\u0026redirect_uri=http://www.chentao.fun/o2o/shopadmin/addshopauthmap\u0026response_type=code\u0026scope=snsapi_userinfo\u0026state=%7BaaashopIdaaa%3A29%2CaaacreateTimeaaa%3A1543739676175%7D#wechat_redirect","err_msg":""}
+2018-12-02 16:34:39.445 [http-nio-80-exec-7] INFO  com.imooc.o2o.util.ShortNetAddressUtil - tinyurl: https://dwz.cn/a4iNOrNf
+2018-12-02 16:42:55.345 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 11184 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-12-02 16:42:55.353 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-12-02 16:43:00.345 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 5.789 seconds (JVM running for 7.781)
+2018-12-02 17:20:03.354 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 7220 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-12-02 17:20:03.367 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-12-02 17:20:08.714 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 5.895 seconds (JVM running for 7.688)
+2018-12-02 18:11:33.171 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 8880 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-12-02 18:11:33.175 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-12-02 18:11:37.869 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.062 seconds (JVM running for 8.096)
+2018-12-02 18:21:01.034 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 6432 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-12-02 18:21:01.040 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-12-02 18:21:05.787 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.04 seconds (JVM running for 7.876)
+2018-12-02 18:37:20.958 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 7528 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-12-02 18:37:20.965 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-12-02 18:37:26.178 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.163 seconds (JVM running for 8.151)
+2018-12-02 18:57:35.406 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 8004 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-12-02 18:57:35.413 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-12-02 18:57:40.820 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.124 seconds (JVM running for 8.405)
+2018-12-02 19:09:49.482 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 6272 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-12-02 19:09:49.488 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-12-02 19:09:54.709 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.105 seconds (JVM running for 8.015)

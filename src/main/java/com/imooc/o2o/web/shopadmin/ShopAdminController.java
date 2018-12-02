@@ -80,4 +80,14 @@ public class ShopAdminController {
 		// 店铺用户积分统计路由
 		return "shop/usershopcheck";
 	}
+	@RequestMapping(value = "/awardmanagement", method = RequestMethod.GET)
+	private String awardmanagement() {
+		// 店铺奖品list页面路由
+		return "shop/awardmanagement";
+	}
+	@RequestMapping(value = "/awardoperation", method = RequestMethod.GET)
+	private String awardoperation() {
+		// 店铺新增奖品页面路由
+		return "shop/awardoperation";
+	}
 }

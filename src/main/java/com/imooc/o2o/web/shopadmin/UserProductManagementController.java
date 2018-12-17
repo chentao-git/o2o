@@ -1,15 +1,12 @@
 package com.imooc.o2o.web.shopadmin;
 
-import com.imooc.o2o.dto.EchartSeries;
-import com.imooc.o2o.dto.EchartXAxis;
-import com.imooc.o2o.dto.UserProductMapExecution;
-import com.imooc.o2o.entity.Product;
-import com.imooc.o2o.entity.ProductSellDaily;
-import com.imooc.o2o.entity.Shop;
-import com.imooc.o2o.entity.UserProductMap;
-import com.imooc.o2o.service.ProductSellDailyService;
-import com.imooc.o2o.service.UserProductMapService;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.imooc.o2o.dto.*;
+import com.imooc.o2o.entity.*;
+import com.imooc.o2o.enums.UserProductMapStateEnum;
+import com.imooc.o2o.service.*;
 import com.imooc.o2o.util.HttpServletRequestUtil;
+import com.imooc.o2o.util.wechat.WechatUtil;
 import org.apache.catalina.servlet4preview.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.net.URLDecoder;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -28,7 +28,18 @@ public class UserProductManagementController {
     private UserProductMapService userProductMapService;
     @Autowired
     private ProductSellDailyService productSellDailyService;
+    @Autowired
+    private WechatAuthService wechatAuthService;
+    @Autowired
+    private ShopAuthMapService shopAuthMapService;
+    @Autowired
+    private ProductService productService;
 
+    /**
+     * 店铺产品分页
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "/listuserproductmapsbyshop", method = RequestMethod.GET)
     @ResponseBody
     private Map<String, Object> listUserProductMapsByShop(HttpServletRequest request) {
@@ -62,6 +73,13 @@ public class UserProductManagementController {
         }
         return modelMap;
     }
+
+    /**
+     * 统计一周七天内产品的销量
+     * @param request
+     * @return
+     * @throws ParseException
+     */
     @RequestMapping(value = "/listproductselldailyinfobyshop", method = RequestMethod.GET)
     @ResponseBody
     private Map<String, Object> listProductSellDailyInfobyShop(HttpServletRequest request) throws ParseException {
@@ -142,5 +160,139 @@ public class UserProductManagementController {
             modelMap.put("errMsg", "empty shopId");
         }
         return modelMap;
+    }
+
+    @RequestMapping(value = "/adduserproductmap", method = RequestMethod.GET)
+    private String addUserProductMap(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        // 获取微信授权信息
+        WechatAuth auth = getOperatorInfo(request);
+        if (auth != null) {
+            PersonInfo operator = auth.getPersonInfo();
+            request.getSession().setAttribute("user", operator);
+            // 获取二维码里state携带的content信息并解码
+            String qrCodeinfo = new String(
+                    URLDecoder.decode(HttpServletRequestUtil.getString(request, "state"), "UTF-8"));
+            ObjectMapper mapper = new ObjectMapper();
+            WechatInfo wechatInfo = null;
+            try {
+                // 将解码后的内容用aaa去替换掉之前生成二维码的时候加入的aaa前缀，转换成WechatInfo实体类
+                wechatInfo = mapper.readValue(qrCodeinfo.replace("aaa", "\""), WechatInfo.class);
+            } catch (Exception e) {
+                return "shop/operationfail";
+            }
+            // 校验二维码是否已经过期
+            if (!checkQRCodeInfo(wechatInfo)) {
+                return "shop/operationfail";
+            }
+            // 获取添加消费记录所需要的参数并组建成userproductmap实例
+            Long productId = wechatInfo.getProductId();
+            Long customerId = wechatInfo.getCustomerId();
+            UserProductMap userProductMap = compactUserProductMap4Add(customerId, productId, auth.getPersonInfo());
+            // 空值校验
+            if (userProductMap != null && customerId != -1) {
+                try {
+                    if (!checkShopAuth(operator.getUserId(), userProductMap)) {
+                        return "shop/operationfail";
+                    }
+                    // 添加消费记录
+                    UserProductMapExecution se = userProductMapService.addUserProductMap(userProductMap);
+                    if (se.getState() == UserProductMapStateEnum.SUCCESS.getState()) {
+                        return "shop/operationsuccess";
+                    }
+                } catch (RuntimeException e) {
+                    return "shop/operationfail";
+                }
+            }
+        }
+        return "shop/operationfail";
+    }
+
+    /**
+     * 根据code获取UserAccessToken，进而通过token里的openId获取微信用户信息
+     *
+     * @param request
+     * @return
+     */
+    private WechatAuth getOperatorInfo(HttpServletRequest request) {
+        String code = request.getParameter("code");
+        WechatAuth auth = null;
+        if (null != code) {
+            UserAccessToken token;
+            try {
+                token = WechatUtil.getUserAccessToken(code);
+                String openId = token.getOpenId();
+                request.getSession().setAttribute("openId", openId);
+                auth = wechatAuthService.getWechatAuthByOpenId(openId);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        return auth;
+    }
+
+    /**
+     * 根据二维码携带的createTime判断其是否超过了10分钟，超过十分钟则认为过期
+     *
+     * @param wechatInfo
+     * @return
+     */
+    private boolean checkQRCodeInfo(WechatInfo wechatInfo) {
+        if (wechatInfo != null && wechatInfo.getProductId() != null && wechatInfo.getCustomerId() != null
+                && wechatInfo.getCreateTime() != null) {
+            long nowTime = System.currentTimeMillis();
+            if ((nowTime - wechatInfo.getCreateTime()) <= 600000) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * 根据传入的customerId, productId以及操作员信息组建用户消费记录
+     *
+     * @param customerId
+     * @param productId
+     * @param operator
+     * @return
+     */
+    private UserProductMap compactUserProductMap4Add(Long customerId, Long productId, PersonInfo operator) {
+        UserProductMap userProductMap = null;
+        if (customerId != null && productId != null) {
+            userProductMap = new UserProductMap();
+            PersonInfo customer = new PersonInfo();
+            customer.setUserId(customerId);
+            // 主要为了获取商品积分
+            Product product = productService.getProductById(productId);
+            userProductMap.setProduct(product);
+            userProductMap.setShop(product.getShop());
+            userProductMap.setUser(customer);
+            userProductMap.setPoint(product.getPoint());
+            userProductMap.setCreateTime(new Date());
+            userProductMap.setOperator(operator);
+        }
+        return userProductMap;
+    }
+
+    /**
+     * 检查扫码的人员是否有操作权限
+     *
+     * @param userId
+     * @param userProductMap
+     * @return
+     */
+    private boolean checkShopAuth(long userId, UserProductMap userProductMap) {
+        // 获取该店铺的所有授权信息
+        ShopAuthMapExecution shopAuthMapExecution = shopAuthMapService
+                .listShopAuthMapByShopId(userProductMap.getShop().getShopId(), 1, 1000);
+        for (ShopAuthMap shopAuthMap : shopAuthMapExecution.getShopAuthMapList()) {
+            // 看看是否给过该人员进行授权
+            if (shopAuthMap.getEmployee().getUserId() == userId) {
+                return true;
+            }
+        }
+        return false;
     }
 }

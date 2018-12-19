@@ -162,6 +162,13 @@ public class UserProductManagementController {
         return modelMap;
     }
 
+    /**
+     * 店铺商品二维码扫描后回调 添加消费记录
+     * @param request
+     * @param response
+     * @return
+     * @throws IOException
+     */
     @RequestMapping(value = "/adduserproductmap", method = RequestMethod.GET)
     private String addUserProductMap(HttpServletRequest request, HttpServletResponse response) throws IOException {
         // 获取微信授权信息

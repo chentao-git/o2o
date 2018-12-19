@@ -65,5 +65,13 @@ public class FrontendController {
 	private String showAwardList() {
 		return "frontend/awardlist";
 	}
-
+	/**
+	 * 奖品兑换列表页路由
+	 *
+	 * @return
+	 */
+	@RequestMapping(value = "/pointrecord", method = RequestMethod.GET)
+	private String showPointRecord() {
+		return "frontend/pointrecord";
+	}
 }

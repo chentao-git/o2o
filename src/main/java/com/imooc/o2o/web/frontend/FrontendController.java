@@ -74,4 +74,22 @@ public class FrontendController {
 	private String showPointRecord() {
 		return "frontend/pointrecord";
 	}
+	/**
+	 * 消费记录列表页路由
+	 *
+	 * @return
+	 */
+	@RequestMapping(value = "/myrecord", method = RequestMethod.GET)
+	private String showMyRecord() {
+		return "frontend/myrecord";
+	}
+	/**
+	 * 用户各店铺积分信息页路由
+	 *
+	 * @return
+	 */
+	@RequestMapping(value = "/mypoint", method = RequestMethod.GET)
+	private String showMyPoint() {
+		return "frontend/mypoint";
+	}
 }

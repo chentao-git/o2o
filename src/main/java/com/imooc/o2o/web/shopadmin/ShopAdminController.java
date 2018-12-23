@@ -90,4 +90,9 @@ public class ShopAdminController {
 		// 店铺新增奖品页面路由
 		return "shop/awardoperation";
 	}
+	@RequestMapping(value = "/awarddelivercheck", method = RequestMethod.GET)
+	private String awardDeliverCheck() {
+		// 店铺用户积分兑换路由
+		return "shop/awarddelivercheck";
+	}
 }

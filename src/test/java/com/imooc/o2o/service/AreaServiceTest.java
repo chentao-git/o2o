@@ -25,5 +25,6 @@ public class AreaServiceTest  {
 		assertEquals("西苑", areaList.get(0).getAreaName());
 		cacheService.removeFromCache(areaService.AREALISTKEY);
 		areaList = areaService.getAreaList();
+		System.out.println("size:" + areaList.size());
 	}
 }

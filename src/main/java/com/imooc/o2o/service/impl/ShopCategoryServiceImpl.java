@@ -34,8 +34,8 @@ public class ShopCategoryServiceImpl implements ShopCategoryService {
 
 	@Override
 	public List<ShopCategory> getShopCategoryList(ShopCategory shopCategoryCondition) {
-		List<ShopCategory> shopCategoryList = shopCategoryDao.queryShopCategory(shopCategoryCondition);
-		/*
+//		List<ShopCategory> shopCategoryList = shopCategoryDao.queryShopCategory(shopCategoryCondition);
+
 		// 定义redis的key前缀
 		String key = SCLISTKEY;
 		// 定义接收对象
@@ -90,7 +90,7 @@ public class ShopCategoryServiceImpl implements ShopCategoryService {
 				throw new ShopCategoryOperationException(e.getMessage());
 			}
 		}
-		*/
+
 		return shopCategoryDao.queryShopCategory(shopCategoryCondition);
 	}
 

@@ -17,6 +17,8 @@ public class RedisConfiguration {
     private String hostname;
     @Value("${redis.port}")
     private int port;
+    @Value("${redis.password}")
+    private String password;
     @Value("${redis.pool.maxActive}")
     private int maxTotal;
     @Value("${redis.pool.maxIdle}")
@@ -56,7 +58,7 @@ public class RedisConfiguration {
      */
     @Bean(name = "jedisWritePool")
     public JedisPoolWriper createJedisPoolWriper(){
-        JedisPoolWriper jedisPoolWriper = new JedisPoolWriper(jedisPoolConfig,hostname,port);
+        JedisPoolWriper jedisPoolWriper = new JedisPoolWriper(jedisPoolConfig,hostname,port,password);
         return jedisPoolWriper;
     }
 

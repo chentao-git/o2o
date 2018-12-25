@@ -35,8 +35,8 @@ public class HeadLineServiceImpl implements HeadLineService {
 	@Override
 	@Transactional
 	public List<HeadLine> getHeadLineList(HeadLine headLineCondition) {
-		List<HeadLine> headLineList = headLineDao.queryHeadLine(headLineCondition);
-		/*
+//		List<HeadLine> headLineList = headLineDao.queryHeadLine(headLineCondition);
+
 		// 定义redis的key前缀
 		String key = HLLISTKEY;
 		// 定义接收对象
@@ -83,7 +83,7 @@ public class HeadLineServiceImpl implements HeadLineService {
 				throw new HeadLineOperationException(e.getMessage());
 			}
 		}
-		*/
+
 		return headLineList;
 	}
 }

@@ -1,15 +1,6 @@
-2018-12-25 22:45:08.864 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Starting AreaServiceTest on JHGHGBMQFLDSVHU with PID 3944 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-12-25 22:45:08.937 [main] INFO  com.imooc.o2o.service.AreaServiceTest - No active profile set, falling back to default profiles: default
-2018-12-25 22:45:34.230 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Started AreaServiceTest in 26.803 seconds (JVM running for 33.311)
-2018-12-25 22:46:14.062 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Starting AreaServiceTest on JHGHGBMQFLDSVHU with PID 6652 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-12-25 22:46:14.067 [main] INFO  com.imooc.o2o.service.AreaServiceTest - No active profile set, falling back to default profiles: default
-2018-12-25 22:46:22.762 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Started AreaServiceTest in 9.756 seconds (JVM running for 12.616)
-2018-12-25 22:50:41.455 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Starting AreaServiceTest on JHGHGBMQFLDSVHU with PID 4760 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-12-25 22:50:41.487 [main] INFO  com.imooc.o2o.service.AreaServiceTest - No active profile set, falling back to default profiles: default
-2018-12-25 22:50:51.361 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Started AreaServiceTest in 10.798 seconds (JVM running for 13.882)
-2018-12-25 23:01:36.005 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Starting AreaServiceTest on JHGHGBMQFLDSVHU with PID 2948 (started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-12-25 23:01:36.014 [main] INFO  com.imooc.o2o.service.AreaServiceTest - No active profile set, falling back to default profiles: default
-2018-12-25 23:01:42.839 [main] INFO  com.imooc.o2o.service.AreaServiceTest - Started AreaServiceTest in 8.564 seconds (JVM running for 10.684)
-2018-12-25 23:01:54.396 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 5332 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
-2018-12-25 23:01:54.410 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-12-25 23:02:00.578 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.788 seconds (JVM running for 8.884)
+2018-12-27 22:32:23.586 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 5560 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-12-27 22:32:23.614 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-12-27 22:32:35.397 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 13.345 seconds (JVM running for 21.85)
+2018-12-27 22:33:04.266 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Starting O2oApplication on JHGHGBMQFLDSVHU with PID 8088 (D:\Users\Administrator\IdeaProjects\o2o\target\classes started by Administrator in D:\Users\Administrator\IdeaProjects\o2o)
+2018-12-27 22:33:04.272 [restartedMain] INFO  com.imooc.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-12-27 22:33:10.379 [restartedMain] INFO  com.imooc.o2o.O2oApplication - Started O2oApplication in 6.979 seconds (JVM running for 9.993)
